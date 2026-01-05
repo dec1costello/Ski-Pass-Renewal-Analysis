@@ -112,6 +112,7 @@ graph LR
     class PYTHON python_outer;
 ```
 
+<br />
 
 ## 🚀 Quick Start
 
@@ -161,36 +162,3 @@ Execute the complete pipeline using the following commands:
 
 > [!TIP]
 > Use `uv run` before any Python command to guarantee execution with the locked environment. This ensures consistent Python versions and dependency trees across all machines.
-
-## 🌵 Repository Structure
-
-    Ski-Pass-Renewal-Prediction/
-    │
-    ├── data/
-    │ └── bronze/ # Raw source txt files
-    │
-    ├── dbt/
-    │ └── models/
-    │   ├── silver/ # Cleaned, normalized tables
-    │   │ ├── silver_guest_demographics.sql
-    │   │ ├── silver_guest_transactions.sql
-    │   │ ├── silver_guest_visitation.sql
-    │   │ └── silver_resort_dimensions.sql
-    │   │
-    │   └── gold/ # Aggregated ML-ready features
-    │     ├── gold_customer_features.sql
-    │     ├── gold_customer_purchases.sql
-    │     └── gold_customer_trips.sql
-    │ 
-    ├── src/
-    │ └── models/ # ML pipeline
-    │   ├── data_check.py # Distribution & data quality checks
-    │   ├── train.py # Model training + Optuna tuning
-    │   ├── evaluate.py # Metrics & model evaluation
-    │   └── predict.py # Batch inference
-    │
-    ├── warehouse/
-    │ └── ski.duckdb # DuckDB warehouse (dbt + ML)
-    │
-    ├── pyproject.toml
-    └── README.md
