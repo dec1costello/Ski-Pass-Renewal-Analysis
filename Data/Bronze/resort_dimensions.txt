@@ -1,0 +1,9 @@
+Resort Key,Resort,State
+1,Resort_1,CO
+2,Resort_2,CA
+3,Resort_3,MT
+4,Resort_4,UT
+5,Resort_5,NM
+6,Resort_6,WY
+7,Resort_7,ID
+8,Resort_8,NV

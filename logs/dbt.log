@@ -1,0 +1,116 @@
+[0m15:32:46.036552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002761293D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027613CB3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027613CB3B10>]}
+
+
+============================== 15:32:46.216192 | 45e03dcc-a1b8-4143-8bf4-f4a5d6361484 ==============================
+[0m15:32:46.216192 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:32:46.217109 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\decla\\.dbt', 'no_print': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt init ski_pass_dbt', 'printer_width': '80', 'target_path': 'None'}
+[0m15:32:46.705283 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\decla\.dbt
+[0m15:32:46.718046 [debug] [MainThread]: Starter project path: C:\Users\decla\Desktop\ski-renew\Ski-Pass-Renewal-Prediction\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:32:46.779576 [info ] [MainThread]: 
+Your new dbt project "ski_pass_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:32:46.780761 [info ] [MainThread]: Setting up your profile.
+[0m15:33:17.626129 [info ] [MainThread]: Profile ski_pass_dbt written to C:\Users\decla\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m15:33:17.628616 [debug] [MainThread]: Command `dbt init` succeeded at 15:33:17.628306 after 31.80 seconds
+[0m15:33:17.629487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027613D66EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002761501B890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027613D4AE00>]}
+[0m15:33:17.630394 [debug] [MainThread]: Flushing usage events
+[0m15:33:18.667097 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:40:05.211013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000173F410D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000173F5473ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000173F5473B10>]}
+
+
+============================== 15:40:05.217188 | e07952a1-8f07-4564-a159-6ab0b18c0deb ==============================
+[0m15:40:05.217188 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:40:05.217979 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'use_colors': 'True', 'log_format': 'default', 'printer_width': '80', 'profiles_dir': 'C:\\Users\\decla\\.dbt', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'None', 'log_cache_events': 'False', 'debug': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m15:40:05.271085 [info ] [MainThread]: dbt version: 1.11.2
+[0m15:40:05.271816 [info ] [MainThread]: python version: 3.13.5
+[0m15:40:05.272410 [info ] [MainThread]: python path: C:\Users\decla\Desktop\ski-renew\Ski-Pass-Renewal-Prediction\.venv\Scripts\python.exe
+[0m15:40:05.273079 [info ] [MainThread]: os info: Windows-11-10.0.22631-SP0
+[0m15:40:05.421208 [info ] [MainThread]: Using profiles dir at C:\Users\decla\.dbt
+[0m15:40:05.421987 [info ] [MainThread]: Using profiles.yml file at C:\Users\decla\.dbt\profiles.yml
+[0m15:40:05.422550 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\decla\Desktop\ski-renew\Ski-Pass-Renewal-Prediction\dbt_project.yml
+[0m15:40:05.426375 [info ] [MainThread]: adapter type: duckdb
+[0m15:40:05.427132 [info ] [MainThread]: adapter version: 1.10.0
+[0m15:40:05.427780 [info ] [MainThread]: Configuration:
+[0m15:40:05.428696 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:40:05.429358 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m15:40:05.430211 [info ] [MainThread]: Required dependencies:
+[0m15:40:05.430814 [debug] [MainThread]: Executing "git --help"
+[0m15:40:05.492037 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:40:05.492929 [debug] [MainThread]: STDERR: "b''"
+[0m15:40:05.493569 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:40:05.494540 [info ] [MainThread]: Connection:
+[0m15:40:05.495272 [info ] [MainThread]:   database: dev
+[0m15:40:05.495995 [info ] [MainThread]:   schema: main
+[0m15:40:05.496782 [info ] [MainThread]:   path: dev.duckdb
+[0m15:40:05.497516 [info ] [MainThread]:   config_options: None
+[0m15:40:05.498131 [info ] [MainThread]:   extensions: None
+[0m15:40:05.498731 [info ] [MainThread]:   settings: {}
+[0m15:40:05.499374 [info ] [MainThread]:   external_root: .
+[0m15:40:05.499932 [info ] [MainThread]:   use_credential_provider: None
+[0m15:40:05.500522 [info ] [MainThread]:   attach: None
+[0m15:40:05.501263 [info ] [MainThread]:   filesystems: None
+[0m15:40:05.501924 [info ] [MainThread]:   remote: None
+[0m15:40:05.502577 [info ] [MainThread]:   plugins: None
+[0m15:40:05.503194 [info ] [MainThread]:   disable_transactions: False
+[0m15:40:05.504055 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m15:40:05.879689 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m15:40:11.879282 [debug] [MainThread]: Using duckdb connection "debug"
+[0m15:40:11.879915 [debug] [MainThread]: On debug: select 1 as id
+[0m15:40:11.880372 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:40:11.949466 [debug] [MainThread]: SQL status: OK in 0.069 seconds
+[0m15:40:11.951307 [debug] [MainThread]: On debug: Close
+[0m15:40:11.952382 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:40:11.953178 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:40:11.953847 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\decla\Desktop\ski-renew\Ski-Pass-Renewal-Prediction\dbt_project.yml> not found
+
+[0m15:40:11.956374 [debug] [MainThread]: Command `dbt debug` failed at 15:40:11.956060 after 6.95 seconds
+[0m15:40:11.957030 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:40:11.957619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000173F66A68B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000173F67B1910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000173F552F020>]}
+[0m15:40:11.958183 [debug] [MainThread]: Flushing usage events
+[0m15:40:13.340274 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:58:44.354393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028435CF1010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028437067ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028437067B10>]}
+
+
+============================== 23:58:44.360249 | f1750088-1f72-40a7-94aa-787fd8d9466f ==============================
+[0m23:58:44.360249 [info ] [MainThread]: Running with dbt=1.11.2
+[0m23:58:44.361164 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'C:\\Users\\decla\\.dbt', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True', 'no_print': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'introspect': 'True', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m23:58:44.361674 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\decla\Desktop\ski-renew\Ski-Pass-Renewal-Prediction\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:58:44.363123 [debug] [MainThread]: Command `dbt run` failed at 23:58:44.363006 after 0.20 seconds
+[0m23:58:44.363454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002843705AB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028436F528D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028436EC3350>]}
+[0m23:58:44.363783 [debug] [MainThread]: Flushing usage events
+[0m23:58:45.221238 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:50:11.178714 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002599320D400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002599207C410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025995623C50>]}
+
+
+============================== 15:50:11.328772 | c08c0a46-151c-4712-887a-1a83918b7208 ==============================
+[0m15:50:11.328772 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:50:11.329703 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'printer_width': '80', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'warn_error': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\decla\\.dbt', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m15:50:11.330493 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m15:50:11.331738 [debug] [MainThread]: Command `dbt run` failed at 15:50:11.331605 after 0.39 seconds
+[0m15:50:11.332104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002599555B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025995651910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259954F3460>]}
+[0m15:50:11.332476 [debug] [MainThread]: Flushing usage events
+[0m15:50:12.275339 [debug] [MainThread]: An error was encountered while trying to flush usage events

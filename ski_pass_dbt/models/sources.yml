@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Raw bronze data files"
+    tables:
+      - name: resort_dimensions
+        description: "Raw resort dimension file"
+      - name: guest_demographics
+        description: "Raw guest demographics file"
+      - name: guest_visitation
+        description: "Raw guest visitation file"
+      - name: guest_transactions
+        description: "Raw guest transactions file"

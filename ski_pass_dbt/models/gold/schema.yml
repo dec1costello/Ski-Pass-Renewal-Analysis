@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: gold_customer_trips
+    description: "Aggregated customer-level trip features for ML"
+    columns:
+      - name: customer_key
+        description: "Unique identifier for each customer"
+        tests:
+          - not_null
+          - unique
+      - name: min_trip_length
+        description: "Minimum length of a trip in days"
+        tests:
+          - not_null
+      - name: max_trip_length
+        description: "Maximum length of a trip in days"
+        tests:
+          - not_null
+      - name: avg_trip_length
+        description: "Average trip length in days"
+        tests:
+          - not_null
+      - name: total_days_on_mountain
+        description: "Total days spent on the mountain by customer"
+        tests:
+          - not_null
+      - name: total_days_in_state
+        description: "Total days spent skiing in-state"
+      - name: total_days_out_of_state
+        description: "Total days spent skiing out-of-state"
+      - name: total_trips
+        description: "Total number of trips taken by customer"
+      - name: total_trips_in_state
+        description: "Total in-state trips"
+      - name: total_trips_out_of_state
+        description: "Total out-of-state trips"
+      - name: pct_trips_out_of_state
+        description: "Percentage of trips that were out-of-state"
+      - name: biggest_gap_days
+        description: "Largest gap between trips in days"
+      - name: smallest_gap_days
+        description: "Smallest gap between trips in days"
+      - name: avg_gap_days
+        description: "Average gap in days between trips"
+
+  - name: gold_customer_purchases
+    description: "Aggregated customer-level purchase features for ML"
+    columns:
+      - name: customer_key
+        description: "Unique identifier for each customer"
+        tests:
+          - not_null
+          - unique
+      - name: total_rentals
+        description: "Total number of rental purchases by customer"
+        tests:
+          - not_null
+      - name: total_lessons
+        description: "Total number of lesson purchases by customer"
+        tests:
+          - not_null
+
+  - name: gold_customer_features
+    description: "Final ML feature table for ski pass renewal prediction"
+    columns:
+      - name: customer_key
+        description: "Unique identifier for each customer"
+        tests:
+          - not_null
+          - unique

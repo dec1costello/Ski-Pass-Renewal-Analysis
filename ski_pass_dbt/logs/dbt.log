@@ -1,0 +1,1505 @@
+[0m15:54:13.284505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACBF9CD010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC0D3BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC0D3BB10>]}
+
+
+============================== 15:54:13.289893 | 36422df3-a482-4021-a489-0f0cc1ed2b76 ==============================
+[0m15:54:13.289893 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:54:13.290640 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'profiles_dir': 'C:\\Users\\decla\\.dbt', 'no_print': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\decla\\Desktop\\Ski-Pass-Renewal-Prediction\\ski_pass_dbt\\logs', 'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'printer_width': '80', 'target_path': 'None'}
+[0m15:54:14.282312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '36422df3-a482-4021-a489-0f0cc1ed2b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC0039E00>]}
+[0m15:54:14.380998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '36422df3-a482-4021-a489-0f0cc1ed2b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC1EC57B0>]}
+[0m15:54:14.404596 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m15:54:15.083889 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:54:15.086169 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:54:15.086985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '36422df3-a482-4021-a489-0f0cc1ed2b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC0DF5E50>]}
+[0m15:54:19.522160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '36422df3-a482-4021-a489-0f0cc1ed2b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC22E3B60>]}
+[0m15:54:19.620187 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\manifest.json
+[0m15:54:19.624499 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\semantic_manifest.json
+[0m15:54:20.287344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '36422df3-a482-4021-a489-0f0cc1ed2b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC26342F0>]}
+[0m15:54:20.288166 [info ] [MainThread]: Found 10 models, 22 data tests, 4 sources, 471 macros
+[0m15:54:20.288975 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '36422df3-a482-4021-a489-0f0cc1ed2b76', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC23458B0>]}
+[0m15:54:20.292571 [info ] [MainThread]: 
+[0m15:54:20.293243 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:54:20.293763 [info ] [MainThread]: 
+[0m15:54:20.294468 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:54:20.301476 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ski'
+[0m15:54:26.954513 [debug] [ThreadPool]: Using duckdb connection "list_ski"
+[0m15:54:26.955277 [debug] [ThreadPool]: On list_ski: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "list_ski"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ski"'
+    
+  
+  
+[0m15:54:26.955847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:54:27.004682 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "list_ski"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ski"'
+    
+  
+  
+[0m15:54:27.005112 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m15:54:27.006244 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:54:27.006570 [debug] [MainThread]: Connection 'list_ski' was properly closed.
+[0m15:54:27.006876 [info ] [MainThread]: 
+[0m15:54:27.007404 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 6.71 seconds (6.71s).
+[0m15:54:27.007943 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Cannot open file "c:\users\decla\desktop\ski-renew\ski-pass-renewal-prediction\warehouse\ski.duckdb": The system cannot find the path specified.
+  
+[0m15:54:27.009174 [debug] [MainThread]: Command `dbt run` failed at 15:54:27.009045 after 13.96 seconds
+[0m15:54:27.009547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC0BF53D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC2751DE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ACC2751FF0>]}
+[0m15:54:27.009903 [debug] [MainThread]: Flushing usage events
+[0m15:54:27.893128 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:56:29.459676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0AC2D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0BF8BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0BF8BB10>]}
+
+
+============================== 15:56:29.465389 | 6c971fbd-2ebf-4634-8a6c-cf5537a2386d ==============================
+[0m15:56:29.465389 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:56:29.466288 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'profiles_dir': 'C:\\Users\\decla\\.dbt', 'invocation_command': 'dbt run', 'no_print': 'None', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\decla\\Desktop\\Ski-Pass-Renewal-Prediction\\ski_pass_dbt\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m15:56:29.772620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0B285E00>]}
+[0m15:56:29.834520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D059370>]}
+[0m15:56:29.838133 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m15:56:30.176868 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:56:30.307987 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m15:56:30.308789 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D50B650>]}
+[0m15:56:31.872594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D65E990>]}
+[0m15:56:31.968069 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\manifest.json
+[0m15:56:31.971475 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\semantic_manifest.json
+[0m15:56:32.006827 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D8E8750>]}
+[0m15:56:32.007351 [info ] [MainThread]: Found 10 models, 22 data tests, 4 sources, 471 macros
+[0m15:56:32.007959 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D838120>]}
+[0m15:56:32.010360 [info ] [MainThread]: 
+[0m15:56:32.010928 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:56:32.011308 [info ] [MainThread]: 
+[0m15:56:32.011822 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:56:32.016626 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ski'
+[0m15:56:32.127816 [debug] [ThreadPool]: Using duckdb connection "list_ski"
+[0m15:56:32.128366 [debug] [ThreadPool]: On list_ski: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "list_ski"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ski"'
+    
+  
+  
+[0m15:56:32.128784 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:56:32.190381 [debug] [ThreadPool]: SQL status: OK in 0.061 seconds
+[0m15:56:32.192025 [debug] [ThreadPool]: On list_ski: Close
+[0m15:56:32.192816 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ski, now create_ski_main)
+[0m15:56:32.193262 [debug] [ThreadPool]: Creating schema "database: "ski"
+schema: "main"
+"
+[0m15:56:32.199151 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m15:56:32.199571 [debug] [ThreadPool]: On create_ski_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "create_ski_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ski'
+        and type='sqlite'
+    
+  
+[0m15:56:32.199846 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:56:32.201299 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:56:32.202516 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m15:56:32.202803 [debug] [ThreadPool]: On create_ski_main: BEGIN
+[0m15:56:32.203363 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:56:32.203620 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m15:56:32.203860 [debug] [ThreadPool]: On create_ski_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "create_ski_main"} */
+
+    
+    
+        create schema if not exists "ski"."main"
+    
+[0m15:56:32.204998 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:56:32.205735 [debug] [ThreadPool]: On create_ski_main: COMMIT
+[0m15:56:32.206021 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m15:56:32.206282 [debug] [ThreadPool]: On create_ski_main: COMMIT
+[0m15:56:32.206797 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:56:32.207076 [debug] [ThreadPool]: On create_ski_main: Close
+[0m15:56:32.209319 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ski_main'
+[0m15:56:32.213763 [debug] [ThreadPool]: Using duckdb connection "list_ski_main"
+[0m15:56:32.214155 [debug] [ThreadPool]: On list_ski_main: BEGIN
+[0m15:56:32.214494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:56:32.215715 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:56:32.216014 [debug] [ThreadPool]: Using duckdb connection "list_ski_main"
+[0m15:56:32.216283 [debug] [ThreadPool]: On list_ski_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "list_ski_main"} */
+select
+      'ski' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ski'
+  
+[0m15:56:32.241596 [debug] [ThreadPool]: SQL status: OK in 0.025 seconds
+[0m15:56:32.242984 [debug] [ThreadPool]: On list_ski_main: ROLLBACK
+[0m15:56:32.244301 [debug] [ThreadPool]: Failed to rollback 'list_ski_main'
+[0m15:56:32.244618 [debug] [ThreadPool]: On list_ski_main: Close
+[0m15:56:32.247022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DA87110>]}
+[0m15:56:32.247452 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:56:32.247797 [debug] [MainThread]: On master: BEGIN
+[0m15:56:32.248040 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:56:32.248756 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:56:32.249097 [debug] [MainThread]: On master: COMMIT
+[0m15:56:32.249358 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:56:32.249690 [debug] [MainThread]: On master: COMMIT
+[0m15:56:32.250235 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:56:32.250500 [debug] [MainThread]: On master: Close
+[0m15:56:32.261525 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_guest_demographics
+[0m15:56:32.262086 [info ] [Thread-1 (]: 1 of 7 START sql table model main.silver_guest_demographics .................... [RUN]
+[0m15:56:32.262910 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.ski_pass_dbt.silver_guest_demographics'
+[0m15:56:32.263301 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_guest_demographics
+[0m15:56:32.270363 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.274532 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_guest_demographics
+[0m15:56:32.311795 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.315625 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.316185 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: BEGIN
+[0m15:56:32.316509 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:56:32.317479 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.317876 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.318187 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_guest_demographics__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("CUSTOMER KEY" as integer)    as customer_key,
+    cast("AGE" as integer)             as age,
+    cast("RENEWALINSUBSEQUENTSEASON" as boolean) as renewal_in_subsequent_season,
+    cast("STATE" as varchar)           as guest_state
+from read_csv_auto(
+    '../Data/Bronze/guest_demographics.txt',
+    header=true
+)
+    );
+  
+  
+[0m15:56:32.369788 [debug] [Thread-1 (]: SQL status: OK in 0.051 seconds
+[0m15:56:32.374867 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.375269 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_demographics'
+  
+[0m15:56:32.376232 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.377356 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.377787 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_demographics'
+  
+[0m15:56:32.380646 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:56:32.385834 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.386210 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+alter table "ski"."main"."silver_guest_demographics" rename to "silver_guest_demographics__dbt_backup"
+[0m15:56:32.387321 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.389576 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.389906 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+alter table "ski"."main"."silver_guest_demographics__dbt_tmp" rename to "silver_guest_demographics"
+[0m15:56:32.390578 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.406587 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: COMMIT
+[0m15:56:32.407024 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.407343 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: COMMIT
+[0m15:56:32.412134 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:56:32.417851 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m15:56:32.418271 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+      drop table if exists "ski"."main"."silver_guest_demographics__dbt_backup" cascade
+    
+[0m15:56:32.421088 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.423224 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: Close
+[0m15:56:32.439489 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DC64940>]}
+[0m15:56:32.440678 [info ] [Thread-1 (]: 1 of 7 OK created sql table model main.silver_guest_demographics ............... [[32mOK[0m in 0.16s]
+[0m15:56:32.441691 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_guest_demographics
+[0m15:56:32.442122 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_guest_transactions
+[0m15:56:32.442620 [info ] [Thread-1 (]: 2 of 7 START sql table model main.silver_guest_transactions .................... [RUN]
+[0m15:56:32.443305 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_guest_demographics, now model.ski_pass_dbt.silver_guest_transactions)
+[0m15:56:32.443722 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_guest_transactions
+[0m15:56:32.445895 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.447325 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_guest_transactions
+[0m15:56:32.450497 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.451895 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.452304 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: BEGIN
+[0m15:56:32.452654 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:56:32.453411 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.453737 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.454056 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_guest_transactions__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("PURCHASE KEY" as integer)   as purchase_key,
+    cast("VISIT KEY" as integer)      as visit_key,
+    cast("CUSTOMER KEY" as integer)   as customer_key,
+    "PURCHASE DATE"::timestamp         as purchase_date,
+    upper("PURCHASE PRODUCT")          as purchase_product
+from read_csv_auto(
+    '../Data/Bronze/guest_transactions.txt',
+    header=true
+)
+    );
+  
+  
+[0m15:56:32.529065 [debug] [Thread-1 (]: SQL status: OK in 0.075 seconds
+[0m15:56:32.530200 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.530579 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_transactions'
+  
+[0m15:56:32.531561 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.532989 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.533397 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_transactions'
+  
+[0m15:56:32.534490 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.537135 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.537507 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+alter table "ski"."main"."silver_guest_transactions" rename to "silver_guest_transactions__dbt_backup"
+[0m15:56:32.538381 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.540998 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.541351 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+alter table "ski"."main"."silver_guest_transactions__dbt_tmp" rename to "silver_guest_transactions"
+[0m15:56:32.542067 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.543477 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: COMMIT
+[0m15:56:32.543852 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.544151 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: COMMIT
+[0m15:56:32.547649 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:56:32.550048 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m15:56:32.550428 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+      drop table if exists "ski"."main"."silver_guest_transactions__dbt_backup" cascade
+    
+[0m15:56:32.552844 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.554073 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: Close
+[0m15:56:32.554577 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D86C910>]}
+[0m15:56:32.555114 [info ] [Thread-1 (]: 2 of 7 OK created sql table model main.silver_guest_transactions ............... [[32mOK[0m in 0.11s]
+[0m15:56:32.556049 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_guest_transactions
+[0m15:56:32.556526 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_guest_visitation
+[0m15:56:32.557000 [info ] [Thread-1 (]: 3 of 7 START sql table model main.silver_guest_visitation ...................... [RUN]
+[0m15:56:32.557818 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_guest_transactions, now model.ski_pass_dbt.silver_guest_visitation)
+[0m15:56:32.558313 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_guest_visitation
+[0m15:56:32.560341 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.561844 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_guest_visitation
+[0m15:56:32.565297 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.567359 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.567978 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: BEGIN
+[0m15:56:32.568389 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:56:32.569143 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.569539 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.569908 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_guest_visitation__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("VISIT KEY" as integer)      as visit_key,
+    cast("RESORT KEY" as integer)     as resort_key,
+    cast("CUSTOMER KEY" as integer)   as customer_key,
+    "VISIT START DATE"::timestamp      as visit_start_date,
+    "VISIT END DATE"::timestamp        as visit_end_date
+from read_csv_auto(
+    '../Data/Bronze/guest_visitation.txt',
+    header=true
+)
+    );
+  
+  
+[0m15:56:32.648123 [debug] [Thread-1 (]: SQL status: OK in 0.077 seconds
+[0m15:56:32.650084 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.650625 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_visitation'
+  
+[0m15:56:32.651882 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.653320 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.653743 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_visitation'
+  
+[0m15:56:32.654862 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.657908 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.658340 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+alter table "ski"."main"."silver_guest_visitation" rename to "silver_guest_visitation__dbt_backup"
+[0m15:56:32.659295 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.662296 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.662706 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+alter table "ski"."main"."silver_guest_visitation__dbt_tmp" rename to "silver_guest_visitation"
+[0m15:56:32.663594 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.665176 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: COMMIT
+[0m15:56:32.665551 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.665879 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: COMMIT
+[0m15:56:32.670037 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:56:32.672236 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m15:56:32.672603 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+      drop table if exists "ski"."main"."silver_guest_visitation__dbt_backup" cascade
+    
+[0m15:56:32.674897 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.676209 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: Close
+[0m15:56:32.676744 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DD2A3D0>]}
+[0m15:56:32.677309 [info ] [Thread-1 (]: 3 of 7 OK created sql table model main.silver_guest_visitation ................. [[32mOK[0m in 0.12s]
+[0m15:56:32.678094 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_guest_visitation
+[0m15:56:32.678483 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_resort_dimensions
+[0m15:56:32.678920 [info ] [Thread-1 (]: 4 of 7 START sql table model main.silver_resort_dimensions ..................... [RUN]
+[0m15:56:32.679561 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_guest_visitation, now model.ski_pass_dbt.silver_resort_dimensions)
+[0m15:56:32.679919 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_resort_dimensions
+[0m15:56:32.682273 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.683724 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_resort_dimensions
+[0m15:56:32.686999 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.688401 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.688839 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: BEGIN
+[0m15:56:32.689210 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:56:32.689917 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.690247 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.690553 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_resort_dimensions__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("RESORT KEY" as integer) as resort_key,
+    upper("RESORT")               as resort,
+    cast("STATE" as varchar)      as resort_state
+from read_csv_auto(
+    '../Data/Bronze/resort_dimensions.txt',
+    header=true
+)
+    );
+  
+  
+[0m15:56:32.710153 [debug] [Thread-1 (]: SQL status: OK in 0.019 seconds
+[0m15:56:32.711478 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.711918 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_resort_dimensions'
+  
+[0m15:56:32.712867 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.714870 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.715554 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_resort_dimensions'
+  
+[0m15:56:32.717158 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.721648 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.722365 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+alter table "ski"."main"."silver_resort_dimensions" rename to "silver_resort_dimensions__dbt_backup"
+[0m15:56:32.723259 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.726103 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.726487 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+alter table "ski"."main"."silver_resort_dimensions__dbt_tmp" rename to "silver_resort_dimensions"
+[0m15:56:32.727328 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.729007 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: COMMIT
+[0m15:56:32.729446 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.729805 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: COMMIT
+[0m15:56:32.732569 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.735550 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m15:56:32.736012 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+      drop table if exists "ski"."main"."silver_resort_dimensions__dbt_backup" cascade
+    
+[0m15:56:32.738459 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.739845 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: Close
+[0m15:56:32.740422 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0D8FA2E0>]}
+[0m15:56:32.741020 [info ] [Thread-1 (]: 4 of 7 OK created sql table model main.silver_resort_dimensions ................ [[32mOK[0m in 0.06s]
+[0m15:56:32.742008 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_resort_dimensions
+[0m15:56:32.742459 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.gold_customer_purchases
+[0m15:56:32.742948 [info ] [Thread-1 (]: 5 of 7 START sql view model main.gold_customer_purchases ....................... [RUN]
+[0m15:56:32.743802 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_resort_dimensions, now model.ski_pass_dbt.gold_customer_purchases)
+[0m15:56:32.744784 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.gold_customer_purchases
+[0m15:56:32.751466 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.754236 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.gold_customer_purchases
+[0m15:56:32.773753 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.776432 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.776934 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: BEGIN
+[0m15:56:32.777293 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:56:32.778033 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.778396 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.778738 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+
+  
+  create view "ski"."main"."gold_customer_purchases__dbt_tmp" as (
+    
+
+with purchases as (
+    select 
+        customer_key,
+        sum(case when lower(purchase_product) = 'rental' then 1 else 0 end) as total_rentals,
+        sum(case when lower(purchase_product) = 'lesson' then 1 else 0 end) as total_lessons
+    from "ski"."main"."silver_guest_transactions"
+    group by customer_key
+)
+
+select * from purchases
+  );
+
+[0m15:56:32.779755 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.782787 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.783434 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+alter view "ski"."main"."gold_customer_purchases" rename to "gold_customer_purchases__dbt_backup"
+[0m15:56:32.784731 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.788008 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.788483 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+alter view "ski"."main"."gold_customer_purchases__dbt_tmp" rename to "gold_customer_purchases"
+[0m15:56:32.789282 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:56:32.791365 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: COMMIT
+[0m15:56:32.791861 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.792179 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: COMMIT
+[0m15:56:32.795091 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:56:32.797193 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m15:56:32.797547 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+
+      drop view if exists "ski"."main"."gold_customer_purchases__dbt_backup" cascade
+    
+[0m15:56:32.799885 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.801658 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: Close
+[0m15:56:32.802258 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DE03FB0>]}
+[0m15:56:32.802830 [info ] [Thread-1 (]: 5 of 7 OK created sql view model main.gold_customer_purchases .................. [[32mOK[0m in 0.06s]
+[0m15:56:32.803607 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.gold_customer_purchases
+[0m15:56:32.803983 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.gold_customer_trips
+[0m15:56:32.804406 [info ] [Thread-1 (]: 6 of 7 START sql view model main.gold_customer_trips ........................... [RUN]
+[0m15:56:32.805070 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.gold_customer_purchases, now model.ski_pass_dbt.gold_customer_trips)
+[0m15:56:32.805427 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.gold_customer_trips
+[0m15:56:32.809006 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.810432 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.gold_customer_trips
+[0m15:56:32.813494 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.814886 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.815766 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: BEGIN
+[0m15:56:32.816275 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:56:32.817206 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.817665 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.818064 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+
+  
+  create view "ski"."main"."gold_customer_trips__dbt_tmp" as (
+    
+
+with base as (
+    select 
+        gd.customer_key,
+        gd.age,
+        gd.renewal_in_subsequent_season,
+        gd.guest_state,
+        gv.visit_key,
+        gv.resort_key,
+        gv.visit_start_date,
+        gv.visit_end_date,
+        gt.purchase_key,
+        upper(gt.purchase_product) as purchase_product,
+        rd.resort_state
+    from "ski"."main"."silver_guest_demographics" gd
+    inner join "ski"."main"."silver_guest_visitation" gv
+        on gd.customer_key = gv.customer_key
+    inner join "ski"."main"."silver_resort_dimensions" rd
+        on gv.resort_key = rd.resort_key
+    left join "ski"."main"."silver_guest_transactions" gt
+        on gv.customer_key = gt.customer_key
+       and gv.visit_key = gt.visit_key
+),
+
+-- Feature flags
+flags as (
+    select
+        *,
+        case when guest_state != resort_state then 1 else 0 end as fe_out_of_state_trip,
+        date_diff('day', visit_start_date, visit_end_date) + 1 as fe_trip_length_in_days,
+        case when extract(dow from visit_start_date) in (0,6) then 1 else 0 end as fe_is_weekend
+    from base
+),
+
+-- Unique trips per customer
+unique_trips as (
+    select distinct customer_key, visit_key, fe_out_of_state_trip, fe_trip_length_in_days, fe_is_weekend,
+           visit_start_date, visit_end_date
+    from flags
+),
+
+-- Compute gaps first
+trips_with_gaps as (
+    select
+        *,
+        date_diff('day', lag(visit_end_date) over (partition by customer_key order by visit_start_date), visit_start_date) as gap_days
+    from unique_trips
+),
+
+-- Aggregated features per customer
+customer_agg as (
+    select
+        customer_key,
+        min(fe_trip_length_in_days) as min_trip_length,
+        max(fe_trip_length_in_days) as max_trip_length,
+        avg(fe_trip_length_in_days) as avg_trip_length,
+        sum(fe_trip_length_in_days) as total_days_on_mountain,
+        sum(case when fe_out_of_state_trip = 0 then fe_trip_length_in_days else 0 end) as total_days_in_state,
+        sum(case when fe_out_of_state_trip = 1 then fe_trip_length_in_days else 0 end) as total_days_out_of_state,
+        count(visit_key) as total_trips,
+        sum(case when fe_out_of_state_trip = 0 then 1 else 0 end) as total_trips_in_state,
+        sum(case when fe_out_of_state_trip = 1 then 1 else 0 end) as total_trips_out_of_state,
+        avg(fe_out_of_state_trip) as pct_trips_out_of_state,
+        max(gap_days) as biggest_gap_days,
+        min(gap_days) as smallest_gap_days,
+        avg(gap_days) as avg_gap_days
+    from trips_with_gaps
+    group by customer_key
+)
+
+select * from customer_agg
+  );
+
+[0m15:56:32.821365 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:56:32.824175 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.824571 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+alter view "ski"."main"."gold_customer_trips" rename to "gold_customer_trips__dbt_backup"
+[0m15:56:32.825496 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.828113 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.828497 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+alter view "ski"."main"."gold_customer_trips__dbt_tmp" rename to "gold_customer_trips"
+[0m15:56:32.829366 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.830686 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: COMMIT
+[0m15:56:32.831043 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.831362 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: COMMIT
+[0m15:56:32.834207 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.836845 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m15:56:32.837440 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+
+      drop view if exists "ski"."main"."gold_customer_trips__dbt_backup" cascade
+    
+[0m15:56:32.840121 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.841515 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: Close
+[0m15:56:32.842097 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DE03CB0>]}
+[0m15:56:32.842686 [info ] [Thread-1 (]: 6 of 7 OK created sql view model main.gold_customer_trips ...................... [[32mOK[0m in 0.04s]
+[0m15:56:32.843441 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.gold_customer_trips
+[0m15:56:32.844300 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.gold_customer_features
+[0m15:56:32.844773 [info ] [Thread-1 (]: 7 of 7 START sql view model main.gold_customer_features ........................ [RUN]
+[0m15:56:32.845487 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.gold_customer_trips, now model.ski_pass_dbt.gold_customer_features)
+[0m15:56:32.845928 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.gold_customer_features
+[0m15:56:32.849289 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.851351 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.gold_customer_features
+[0m15:56:32.855390 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.857417 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.857876 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: BEGIN
+[0m15:56:32.858206 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:56:32.858853 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.859182 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.859537 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+
+  
+  create view "ski"."main"."gold_customer_features__dbt_tmp" as (
+    
+
+with trips as (
+    select *
+    from "ski"."main"."gold_customer_trips"
+),
+
+purchases as (
+    select *
+    from "ski"."main"."gold_customer_purchases"
+),
+
+demographics as (
+    select
+        customer_key,
+        age,
+        guest_state,
+        renewal_in_subsequent_season
+    from "ski"."main"."silver_guest_demographics"
+)
+
+select
+    t.customer_key,
+
+    -- label + static features
+    d.age,
+    d.guest_state,
+    d.renewal_in_subsequent_season,
+
+    -- trip behavior
+    t.min_trip_length,
+    t.max_trip_length,
+    t.avg_trip_length,
+    t.total_days_on_mountain,
+    t.total_days_in_state,
+    t.total_days_out_of_state,
+    t.total_trips,
+    t.total_trips_in_state,
+    t.total_trips_out_of_state,
+    t.pct_trips_out_of_state,
+    t.biggest_gap_days,
+    t.smallest_gap_days,
+    t.avg_gap_days,
+
+    -- purchase behavior
+    coalesce(p.total_rentals, 0) as total_rentals,
+    coalesce(p.total_lessons, 0) as total_lessons
+
+from trips t
+left join purchases p
+    on t.customer_key = p.customer_key
+left join demographics d
+    on t.customer_key = d.customer_key
+  );
+
+[0m15:56:32.862476 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:56:32.865153 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.865544 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+alter view "ski"."main"."gold_customer_features" rename to "gold_customer_features__dbt_backup"
+[0m15:56:32.866492 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.872729 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.874005 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+alter view "ski"."main"."gold_customer_features__dbt_tmp" rename to "gold_customer_features"
+[0m15:56:32.875805 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:56:32.877416 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: COMMIT
+[0m15:56:32.877838 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.878168 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: COMMIT
+[0m15:56:32.880650 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.882884 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m15:56:32.883386 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+
+      drop view if exists "ski"."main"."gold_customer_features__dbt_backup" cascade
+    
+[0m15:56:32.885778 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:56:32.888128 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: Close
+[0m15:56:32.889216 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6c971fbd-2ebf-4634-8a6c-cf5537a2386d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DE033B0>]}
+[0m15:56:32.890162 [info ] [Thread-1 (]: 7 of 7 OK created sql view model main.gold_customer_features ................... [[32mOK[0m in 0.04s]
+[0m15:56:32.891095 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.gold_customer_features
+[0m15:56:32.892639 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:56:32.892996 [debug] [MainThread]: On master: BEGIN
+[0m15:56:32.893282 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:56:32.893904 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:56:32.894200 [debug] [MainThread]: On master: COMMIT
+[0m15:56:32.894474 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:56:32.894728 [debug] [MainThread]: On master: COMMIT
+[0m15:56:32.895205 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:56:32.895500 [debug] [MainThread]: On master: Close
+[0m15:56:32.895871 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:56:32.896138 [debug] [MainThread]: Connection 'create_ski_main' was properly closed.
+[0m15:56:32.896373 [debug] [MainThread]: Connection 'list_ski_main' was properly closed.
+[0m15:56:32.896600 [debug] [MainThread]: Connection 'model.ski_pass_dbt.gold_customer_features' was properly closed.
+[0m15:56:32.896932 [info ] [MainThread]: 
+[0m15:56:32.897549 [info ] [MainThread]: Finished running 4 table models, 3 view models in 0 hours 0 minutes and 0.89 seconds (0.89s).
+[0m15:56:32.899651 [debug] [MainThread]: Command end result
+[0m15:56:32.926516 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\manifest.json
+[0m15:56:32.929373 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\semantic_manifest.json
+[0m15:56:32.936434 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\run_results.json
+[0m15:56:32.936882 [info ] [MainThread]: 
+[0m15:56:32.937479 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:56:32.937920 [info ] [MainThread]: 
+[0m15:56:32.938381 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m15:56:32.939532 [debug] [MainThread]: Command `dbt run` succeeded at 15:56:32.939419 after 3.70 seconds
+[0m15:56:32.939881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0BD9C230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DE943B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018C0DE97E90>]}
+[0m15:56:32.940235 [debug] [MainThread]: Flushing usage events
+[0m15:56:34.041410 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:05:16.778084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE6E4D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE81ABED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE81ABB10>]}
+
+
+============================== 16:05:16.785034 | 45692220-d979-4995-84d8-5ded12956860 ==============================
+[0m16:05:16.785034 [info ] [MainThread]: Running with dbt=1.11.2
+[0m16:05:16.785936 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'no_print': 'None', 'log_format': 'default', 'use_colors': 'True', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'C:\\Users\\decla\\Desktop\\Ski-Pass-Renewal-Prediction\\ski_pass_dbt\\logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'quiet': 'False', 'introspect': 'True', 'empty': 'False', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'C:\\Users\\decla\\.dbt', 'invocation_command': 'dbt run', 'printer_width': '80', 'target_path': 'None'}
+[0m16:05:17.098150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE74A5E00>]}
+[0m16:05:17.170085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE9275370>]}
+[0m16:05:17.173556 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m16:05:17.557656 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m16:05:17.830734 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:05:17.831387 [debug] [MainThread]: Partial parsing: updated file: ski_pass_dbt://models\gold\gold_customer_features.sql
+[0m16:05:18.352375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE965B150>]}
+[0m16:05:18.464902 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\manifest.json
+[0m16:05:18.468780 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\semantic_manifest.json
+[0m16:05:18.519813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE808B020>]}
+[0m16:05:18.520443 [info ] [MainThread]: Found 10 models, 22 data tests, 4 sources, 471 macros
+[0m16:05:18.521087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE94BA430>]}
+[0m16:05:18.523566 [info ] [MainThread]: 
+[0m16:05:18.524228 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:05:18.524707 [info ] [MainThread]: 
+[0m16:05:18.525371 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m16:05:18.531041 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ski'
+[0m16:05:18.693574 [debug] [ThreadPool]: Using duckdb connection "list_ski"
+[0m16:05:18.693962 [debug] [ThreadPool]: On list_ski: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "list_ski"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"ski"'
+    
+  
+  
+[0m16:05:18.694264 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:05:18.736200 [debug] [ThreadPool]: SQL status: OK in 0.042 seconds
+[0m16:05:18.738395 [debug] [ThreadPool]: On list_ski: Close
+[0m16:05:18.739575 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ski, now create_ski_main)
+[0m16:05:18.740054 [debug] [ThreadPool]: Creating schema "database: "ski"
+schema: "main"
+"
+[0m16:05:18.746282 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m16:05:18.746912 [debug] [ThreadPool]: On create_ski_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "create_ski_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='ski'
+        and type='sqlite'
+    
+  
+[0m16:05:18.747445 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m16:05:18.748932 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:05:18.750182 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m16:05:18.750484 [debug] [ThreadPool]: On create_ski_main: BEGIN
+[0m16:05:18.751072 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:05:18.751328 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m16:05:18.751565 [debug] [ThreadPool]: On create_ski_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "create_ski_main"} */
+
+    
+    
+        create schema if not exists "ski"."main"
+    
+[0m16:05:18.752253 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:05:18.752992 [debug] [ThreadPool]: On create_ski_main: COMMIT
+[0m16:05:18.753283 [debug] [ThreadPool]: Using duckdb connection "create_ski_main"
+[0m16:05:18.753534 [debug] [ThreadPool]: On create_ski_main: COMMIT
+[0m16:05:18.754095 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m16:05:18.754359 [debug] [ThreadPool]: On create_ski_main: Close
+[0m16:05:18.756835 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_ski_main'
+[0m16:05:18.761960 [debug] [ThreadPool]: Using duckdb connection "list_ski_main"
+[0m16:05:18.762302 [debug] [ThreadPool]: On list_ski_main: BEGIN
+[0m16:05:18.762558 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:05:18.763222 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m16:05:18.763501 [debug] [ThreadPool]: Using duckdb connection "list_ski_main"
+[0m16:05:18.763761 [debug] [ThreadPool]: On list_ski_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "connection_name": "list_ski_main"} */
+select
+      'ski' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'ski'
+  
+[0m16:05:18.782669 [debug] [ThreadPool]: SQL status: OK in 0.018 seconds
+[0m16:05:18.784220 [debug] [ThreadPool]: On list_ski_main: ROLLBACK
+[0m16:05:18.786237 [debug] [ThreadPool]: Failed to rollback 'list_ski_main'
+[0m16:05:18.786583 [debug] [ThreadPool]: On list_ski_main: Close
+[0m16:05:18.789228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE99832B0>]}
+[0m16:05:18.789914 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:05:18.790180 [debug] [MainThread]: On master: BEGIN
+[0m16:05:18.790418 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:05:18.791130 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m16:05:18.791384 [debug] [MainThread]: On master: COMMIT
+[0m16:05:18.791627 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:05:18.791928 [debug] [MainThread]: On master: COMMIT
+[0m16:05:18.792410 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:05:18.792756 [debug] [MainThread]: On master: Close
+[0m16:05:18.802660 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_guest_demographics
+[0m16:05:18.803304 [info ] [Thread-1 (]: 1 of 7 START sql table model main.silver_guest_demographics .................... [RUN]
+[0m16:05:18.804167 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.ski_pass_dbt.silver_guest_demographics'
+[0m16:05:18.804589 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_guest_demographics
+[0m16:05:18.811222 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.812542 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_guest_demographics
+[0m16:05:18.848024 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.849371 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.849805 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: BEGIN
+[0m16:05:18.850210 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:05:18.851178 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:18.851787 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.852407 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_guest_demographics__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("CUSTOMER KEY" as integer)    as customer_key,
+    cast("AGE" as integer)             as age,
+    cast("RENEWALINSUBSEQUENTSEASON" as boolean) as renewal_in_subsequent_season,
+    cast("STATE" as varchar)           as guest_state
+from read_csv_auto(
+    '../Data/Bronze/guest_demographics.txt',
+    header=true
+)
+    );
+  
+  
+[0m16:05:18.883922 [debug] [Thread-1 (]: SQL status: OK in 0.031 seconds
+[0m16:05:18.889430 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.889944 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_demographics'
+  
+[0m16:05:18.891154 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:18.892531 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.892917 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_demographics'
+  
+[0m16:05:18.894055 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:18.899951 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.900360 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+alter table "ski"."main"."silver_guest_demographics" rename to "silver_guest_demographics__dbt_backup"
+[0m16:05:18.901633 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:18.904980 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.905434 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+alter table "ski"."main"."silver_guest_demographics__dbt_tmp" rename to "silver_guest_demographics"
+[0m16:05:18.906211 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:18.921966 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: COMMIT
+[0m16:05:18.922447 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.922833 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: COMMIT
+[0m16:05:18.927002 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m16:05:18.931980 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_demographics"
+[0m16:05:18.932393 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_demographics"} */
+
+      drop table if exists "ski"."main"."silver_guest_demographics__dbt_backup" cascade
+    
+[0m16:05:18.935355 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:05:18.938468 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_demographics: Close
+[0m16:05:18.941227 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE9D90710>]}
+[0m16:05:18.942004 [info ] [Thread-1 (]: 1 of 7 OK created sql table model main.silver_guest_demographics ............... [[32mOK[0m in 0.14s]
+[0m16:05:18.942899 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_guest_demographics
+[0m16:05:18.943313 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_guest_transactions
+[0m16:05:18.943774 [info ] [Thread-1 (]: 2 of 7 START sql table model main.silver_guest_transactions .................... [RUN]
+[0m16:05:18.944473 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_guest_demographics, now model.ski_pass_dbt.silver_guest_transactions)
+[0m16:05:18.944867 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_guest_transactions
+[0m16:05:18.947468 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:18.949060 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_guest_transactions
+[0m16:05:18.954264 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:18.955721 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:18.956363 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: BEGIN
+[0m16:05:18.956944 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:05:18.957925 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:18.958459 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:18.958962 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_guest_transactions__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("PURCHASE KEY" as integer)   as purchase_key,
+    cast("VISIT KEY" as integer)      as visit_key,
+    cast("CUSTOMER KEY" as integer)   as customer_key,
+    "PURCHASE DATE"::timestamp         as purchase_date,
+    upper("PURCHASE PRODUCT")          as purchase_product
+from read_csv_auto(
+    '../Data/Bronze/guest_transactions.txt',
+    header=true
+)
+    );
+  
+  
+[0m16:05:19.011908 [debug] [Thread-1 (]: SQL status: OK in 0.052 seconds
+[0m16:05:19.013064 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:19.013443 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_transactions'
+  
+[0m16:05:19.014362 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.015524 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:19.015878 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_transactions'
+  
+[0m16:05:19.016748 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.019925 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:19.020365 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+alter table "ski"."main"."silver_guest_transactions" rename to "silver_guest_transactions__dbt_backup"
+[0m16:05:19.021123 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.023953 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:19.024337 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+alter table "ski"."main"."silver_guest_transactions__dbt_tmp" rename to "silver_guest_transactions"
+[0m16:05:19.025167 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.026766 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: COMMIT
+[0m16:05:19.027137 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:19.027469 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: COMMIT
+[0m16:05:19.030792 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:05:19.032931 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_transactions"
+[0m16:05:19.033349 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_transactions"} */
+
+      drop table if exists "ski"."main"."silver_guest_transactions__dbt_backup" cascade
+    
+[0m16:05:19.036369 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.038629 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_transactions: Close
+[0m16:05:19.039264 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE9C149F0>]}
+[0m16:05:19.039883 [info ] [Thread-1 (]: 2 of 7 OK created sql table model main.silver_guest_transactions ............... [[32mOK[0m in 0.09s]
+[0m16:05:19.040676 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_guest_transactions
+[0m16:05:19.041202 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_guest_visitation
+[0m16:05:19.041786 [info ] [Thread-1 (]: 3 of 7 START sql table model main.silver_guest_visitation ...................... [RUN]
+[0m16:05:19.042559 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_guest_transactions, now model.ski_pass_dbt.silver_guest_visitation)
+[0m16:05:19.042879 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_guest_visitation
+[0m16:05:19.045443 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.046649 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_guest_visitation
+[0m16:05:19.049871 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.051596 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.052198 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: BEGIN
+[0m16:05:19.052576 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:05:19.053313 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.053691 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.054036 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_guest_visitation__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("VISIT KEY" as integer)      as visit_key,
+    cast("RESORT KEY" as integer)     as resort_key,
+    cast("CUSTOMER KEY" as integer)   as customer_key,
+    "VISIT START DATE"::timestamp      as visit_start_date,
+    "VISIT END DATE"::timestamp        as visit_end_date
+from read_csv_auto(
+    '../Data/Bronze/guest_visitation.txt',
+    header=true
+)
+    );
+  
+  
+[0m16:05:19.115939 [debug] [Thread-1 (]: SQL status: OK in 0.061 seconds
+[0m16:05:19.117255 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.117998 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_visitation'
+  
+[0m16:05:19.119720 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.121398 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.121881 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_guest_visitation'
+  
+[0m16:05:19.123062 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.126679 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.127223 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+alter table "ski"."main"."silver_guest_visitation" rename to "silver_guest_visitation__dbt_backup"
+[0m16:05:19.128059 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.130743 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.131196 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+alter table "ski"."main"."silver_guest_visitation__dbt_tmp" rename to "silver_guest_visitation"
+[0m16:05:19.132046 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.134372 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: COMMIT
+[0m16:05:19.134896 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.135263 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: COMMIT
+[0m16:05:19.138828 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:05:19.140999 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_guest_visitation"
+[0m16:05:19.141370 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_guest_visitation"} */
+
+      drop table if exists "ski"."main"."silver_guest_visitation__dbt_backup" cascade
+    
+[0m16:05:19.143489 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.144827 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_guest_visitation: Close
+[0m16:05:19.145426 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE9DDA0D0>]}
+[0m16:05:19.146007 [info ] [Thread-1 (]: 3 of 7 OK created sql table model main.silver_guest_visitation ................. [[32mOK[0m in 0.10s]
+[0m16:05:19.146879 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_guest_visitation
+[0m16:05:19.147281 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.silver_resort_dimensions
+[0m16:05:19.147733 [info ] [Thread-1 (]: 4 of 7 START sql table model main.silver_resort_dimensions ..................... [RUN]
+[0m16:05:19.148481 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_guest_visitation, now model.ski_pass_dbt.silver_resort_dimensions)
+[0m16:05:19.148957 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.silver_resort_dimensions
+[0m16:05:19.151538 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.152849 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.silver_resort_dimensions
+[0m16:05:19.155748 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.157053 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.157494 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: BEGIN
+[0m16:05:19.157830 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:05:19.158489 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.158811 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.159124 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+  
+    
+    
+
+    create  table
+      "ski"."main"."silver_resort_dimensions__dbt_tmp"
+  
+    as (
+      
+
+select
+    cast("RESORT KEY" as integer) as resort_key,
+    upper("RESORT")               as resort,
+    cast("STATE" as varchar)      as resort_state
+from read_csv_auto(
+    '../Data/Bronze/resort_dimensions.txt',
+    header=true
+)
+    );
+  
+  
+[0m16:05:19.162247 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:05:19.163376 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.163739 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_resort_dimensions'
+  
+[0m16:05:19.164673 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.165881 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.166238 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'silver_resort_dimensions'
+  
+[0m16:05:19.167579 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.171740 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.172236 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+alter table "ski"."main"."silver_resort_dimensions" rename to "silver_resort_dimensions__dbt_backup"
+[0m16:05:19.173068 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.176594 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.177179 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+alter table "ski"."main"."silver_resort_dimensions__dbt_tmp" rename to "silver_resort_dimensions"
+[0m16:05:19.178263 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.180475 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: COMMIT
+[0m16:05:19.181317 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.181684 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: COMMIT
+[0m16:05:19.184078 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.186440 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.silver_resort_dimensions"
+[0m16:05:19.186903 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.silver_resort_dimensions"} */
+
+      drop table if exists "ski"."main"."silver_resort_dimensions__dbt_backup" cascade
+    
+[0m16:05:19.189262 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.191569 [debug] [Thread-1 (]: On model.ski_pass_dbt.silver_resort_dimensions: Close
+[0m16:05:19.193080 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE9C750D0>]}
+[0m16:05:19.194374 [info ] [Thread-1 (]: 4 of 7 OK created sql table model main.silver_resort_dimensions ................ [[32mOK[0m in 0.04s]
+[0m16:05:19.195685 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.silver_resort_dimensions
+[0m16:05:19.196326 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.gold_customer_purchases
+[0m16:05:19.196850 [info ] [Thread-1 (]: 5 of 7 START sql view model main.gold_customer_purchases ....................... [RUN]
+[0m16:05:19.197638 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.silver_resort_dimensions, now model.ski_pass_dbt.gold_customer_purchases)
+[0m16:05:19.198132 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.gold_customer_purchases
+[0m16:05:19.200898 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.202514 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.gold_customer_purchases
+[0m16:05:19.222957 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.224617 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.225385 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: BEGIN
+[0m16:05:19.226092 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:05:19.227715 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.228797 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.229274 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+
+  
+  create view "ski"."main"."gold_customer_purchases__dbt_tmp" as (
+    
+
+with purchases as (
+    select 
+        customer_key,
+        sum(case when lower(purchase_product) = 'rental' then 1 else 0 end) as total_rentals,
+        sum(case when lower(purchase_product) = 'lesson' then 1 else 0 end) as total_lessons
+    from "ski"."main"."silver_guest_transactions"
+    group by customer_key
+)
+
+select * from purchases
+  );
+
+[0m16:05:19.230458 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.233080 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.233515 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+alter view "ski"."main"."gold_customer_purchases" rename to "gold_customer_purchases__dbt_backup"
+[0m16:05:19.234454 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.237215 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.237664 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+alter view "ski"."main"."gold_customer_purchases__dbt_tmp" rename to "gold_customer_purchases"
+[0m16:05:19.238440 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.240008 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: COMMIT
+[0m16:05:19.240616 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.241115 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: COMMIT
+[0m16:05:19.244151 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.246592 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_purchases"
+[0m16:05:19.246999 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_purchases"} */
+
+      drop view if exists "ski"."main"."gold_customer_purchases__dbt_backup" cascade
+    
+[0m16:05:19.249552 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.251007 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_purchases: Close
+[0m16:05:19.251702 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE9CD3A10>]}
+[0m16:05:19.252598 [info ] [Thread-1 (]: 5 of 7 OK created sql view model main.gold_customer_purchases .................. [[32mOK[0m in 0.05s]
+[0m16:05:19.253895 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.gold_customer_purchases
+[0m16:05:19.254305 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.gold_customer_trips
+[0m16:05:19.254757 [info ] [Thread-1 (]: 6 of 7 START sql view model main.gold_customer_trips ........................... [RUN]
+[0m16:05:19.255537 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.gold_customer_purchases, now model.ski_pass_dbt.gold_customer_trips)
+[0m16:05:19.255953 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.gold_customer_trips
+[0m16:05:19.259227 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.260499 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.gold_customer_trips
+[0m16:05:19.263843 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.265329 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.265767 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: BEGIN
+[0m16:05:19.266093 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:05:19.266785 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.267109 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.267750 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+
+  
+  create view "ski"."main"."gold_customer_trips__dbt_tmp" as (
+    
+
+with base as (
+    select 
+        gd.customer_key,
+        gd.age,
+        gd.renewal_in_subsequent_season,
+        gd.guest_state,
+        gv.visit_key,
+        gv.resort_key,
+        gv.visit_start_date,
+        gv.visit_end_date,
+        gt.purchase_key,
+        upper(gt.purchase_product) as purchase_product,
+        rd.resort_state
+    from "ski"."main"."silver_guest_demographics" gd
+    inner join "ski"."main"."silver_guest_visitation" gv
+        on gd.customer_key = gv.customer_key
+    inner join "ski"."main"."silver_resort_dimensions" rd
+        on gv.resort_key = rd.resort_key
+    left join "ski"."main"."silver_guest_transactions" gt
+        on gv.customer_key = gt.customer_key
+       and gv.visit_key = gt.visit_key
+),
+
+-- Feature flags
+flags as (
+    select
+        *,
+        case when guest_state != resort_state then 1 else 0 end as fe_out_of_state_trip,
+        date_diff('day', visit_start_date, visit_end_date) + 1 as fe_trip_length_in_days,
+        case when extract(dow from visit_start_date) in (0,6) then 1 else 0 end as fe_is_weekend
+    from base
+),
+
+-- Unique trips per customer
+unique_trips as (
+    select distinct customer_key, visit_key, fe_out_of_state_trip, fe_trip_length_in_days, fe_is_weekend,
+           visit_start_date, visit_end_date
+    from flags
+),
+
+-- Compute gaps first
+trips_with_gaps as (
+    select
+        *,
+        date_diff('day', lag(visit_end_date) over (partition by customer_key order by visit_start_date), visit_start_date) as gap_days
+    from unique_trips
+),
+
+-- Aggregated features per customer
+customer_agg as (
+    select
+        customer_key,
+        min(fe_trip_length_in_days) as min_trip_length,
+        max(fe_trip_length_in_days) as max_trip_length,
+        avg(fe_trip_length_in_days) as avg_trip_length,
+        sum(fe_trip_length_in_days) as total_days_on_mountain,
+        sum(case when fe_out_of_state_trip = 0 then fe_trip_length_in_days else 0 end) as total_days_in_state,
+        sum(case when fe_out_of_state_trip = 1 then fe_trip_length_in_days else 0 end) as total_days_out_of_state,
+        count(visit_key) as total_trips,
+        sum(case when fe_out_of_state_trip = 0 then 1 else 0 end) as total_trips_in_state,
+        sum(case when fe_out_of_state_trip = 1 then 1 else 0 end) as total_trips_out_of_state,
+        avg(fe_out_of_state_trip) as pct_trips_out_of_state,
+        max(gap_days) as biggest_gap_days,
+        min(gap_days) as smallest_gap_days,
+        avg(gap_days) as avg_gap_days
+    from trips_with_gaps
+    group by customer_key
+)
+
+select * from customer_agg
+  );
+
+[0m16:05:19.270998 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.274079 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.274967 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+alter view "ski"."main"."gold_customer_trips" rename to "gold_customer_trips__dbt_backup"
+[0m16:05:19.276506 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.279101 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.279458 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+alter view "ski"."main"."gold_customer_trips__dbt_tmp" rename to "gold_customer_trips"
+[0m16:05:19.280368 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.281757 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: COMMIT
+[0m16:05:19.282179 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.282503 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: COMMIT
+[0m16:05:19.285624 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:05:19.292348 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_trips"
+[0m16:05:19.293002 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_trips"} */
+
+      drop view if exists "ski"."main"."gold_customer_trips__dbt_backup" cascade
+    
+[0m16:05:19.295934 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.297269 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_trips: Close
+[0m16:05:19.297760 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE99620F0>]}
+[0m16:05:19.298281 [info ] [Thread-1 (]: 6 of 7 OK created sql view model main.gold_customer_trips ...................... [[32mOK[0m in 0.04s]
+[0m16:05:19.299281 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.gold_customer_trips
+[0m16:05:19.300318 [debug] [Thread-1 (]: Began running node model.ski_pass_dbt.gold_customer_features
+[0m16:05:19.300911 [info ] [Thread-1 (]: 7 of 7 START sql view model main.gold_customer_features ........................ [RUN]
+[0m16:05:19.301655 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ski_pass_dbt.gold_customer_trips, now model.ski_pass_dbt.gold_customer_features)
+[0m16:05:19.302320 [debug] [Thread-1 (]: Began compiling node model.ski_pass_dbt.gold_customer_features
+[0m16:05:19.305888 [debug] [Thread-1 (]: Writing injected SQL for node "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.307115 [debug] [Thread-1 (]: Began executing node model.ski_pass_dbt.gold_customer_features
+[0m16:05:19.310397 [debug] [Thread-1 (]: Writing runtime sql for node "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.311749 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.312265 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: BEGIN
+[0m16:05:19.312605 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m16:05:19.313320 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.313642 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.314016 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+
+  
+  create view "ski"."main"."gold_customer_features__dbt_tmp" as (
+    
+
+with trips as (
+
+    select *
+    from "ski"."main"."gold_customer_trips"
+
+),
+
+purchases as (
+
+    select *
+    from "ski"."main"."gold_customer_purchases"
+
+),
+
+demographics as (
+
+    select
+        customer_key,
+        age,
+        guest_state,
+        renewal_in_subsequent_season
+    from "ski"."main"."silver_guest_demographics"
+
+)
+
+select
+    -- -------------------------------------------------
+    -- Identifiers
+    -- -------------------------------------------------
+    t.customer_key,
+
+    -- -------------------------------------------------
+    -- Label & static customer attributes
+    -- -------------------------------------------------
+    d.renewal_in_subsequent_season,
+    d.age,
+    d.guest_state,
+
+    -- -------------------------------------------------
+    -- Trip behavior (raw)
+    -- -------------------------------------------------
+    t.min_trip_length,
+    t.max_trip_length,
+    t.avg_trip_length,
+    t.total_days_on_mountain,
+    t.total_days_in_state,
+    t.total_days_out_of_state,
+    t.total_trips,
+    t.total_trips_in_state,
+    t.total_trips_out_of_state,
+    t.pct_trips_out_of_state,
+    t.biggest_gap_days,
+    t.smallest_gap_days,
+    t.avg_gap_days,
+
+    -- -------------------------------------------------
+    -- Purchase behavior (raw)
+    -- -------------------------------------------------
+    coalesce(p.total_rentals, 0) as total_rentals,
+    coalesce(p.total_lessons, 0) as total_lessons,
+
+    -- -------------------------------------------------
+    -- ML-derived features (previously in Python)
+    -- -------------------------------------------------
+
+    -- Single-trip customer flag
+    case
+        when t.total_trips = 1 then 1
+        else 0
+    end as is_single_trip_customer,
+
+    -- Zero-inflation flags
+    case
+        when t.total_trips_out_of_state > 0 then 1
+        else 0
+    end as total_trips_out_of_state_nonzero,
+
+    case
+        when t.total_days_out_of_state > 0 then 1
+        else 0
+    end as total_days_out_of_state_nonzero,
+
+    case
+        when t.pct_trips_out_of_state > 0 then 1
+        else 0
+    end as pct_trips_out_of_state_nonzero,
+
+    case
+        when coalesce(p.total_lessons, 0) > 0 then 1
+        else 0
+    end as total_lessons_nonzero,
+
+    -- Gap null handling (explicit, stable)
+    coalesce(t.biggest_gap_days, 0)  as biggest_gap_days_filled,
+    coalesce(t.smallest_gap_days, 0) as smallest_gap_days_filled,
+    coalesce(t.avg_gap_days, 0)      as avg_gap_days_filled
+
+from trips t
+left join purchases p
+    on t.customer_key = p.customer_key
+left join demographics d
+    on t.customer_key = d.customer_key
+  );
+
+[0m16:05:19.317139 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m16:05:19.321064 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.321817 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+alter view "ski"."main"."gold_customer_features" rename to "gold_customer_features__dbt_backup"
+[0m16:05:19.323169 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m16:05:19.327819 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.328458 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+alter view "ski"."main"."gold_customer_features__dbt_tmp" rename to "gold_customer_features"
+[0m16:05:19.329255 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m16:05:19.330659 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: COMMIT
+[0m16:05:19.331041 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.331359 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: COMMIT
+[0m16:05:19.334066 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.336968 [debug] [Thread-1 (]: Using duckdb connection "model.ski_pass_dbt.gold_customer_features"
+[0m16:05:19.337467 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "ski_pass_dbt", "target_name": "dev", "node_id": "model.ski_pass_dbt.gold_customer_features"} */
+
+      drop view if exists "ski"."main"."gold_customer_features__dbt_backup" cascade
+    
+[0m16:05:19.339998 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m16:05:19.342842 [debug] [Thread-1 (]: On model.ski_pass_dbt.gold_customer_features: Close
+[0m16:05:19.343743 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45692220-d979-4995-84d8-5ded12956860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE99632F0>]}
+[0m16:05:19.344662 [info ] [Thread-1 (]: 7 of 7 OK created sql view model main.gold_customer_features ................... [[32mOK[0m in 0.04s]
+[0m16:05:19.345719 [debug] [Thread-1 (]: Finished running node model.ski_pass_dbt.gold_customer_features
+[0m16:05:19.347178 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:05:19.347553 [debug] [MainThread]: On master: BEGIN
+[0m16:05:19.347834 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:05:19.348464 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m16:05:19.348773 [debug] [MainThread]: On master: COMMIT
+[0m16:05:19.349049 [debug] [MainThread]: Using duckdb connection "master"
+[0m16:05:19.349304 [debug] [MainThread]: On master: COMMIT
+[0m16:05:19.349800 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m16:05:19.350100 [debug] [MainThread]: On master: Close
+[0m16:05:19.350466 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:05:19.350778 [debug] [MainThread]: Connection 'create_ski_main' was properly closed.
+[0m16:05:19.351078 [debug] [MainThread]: Connection 'list_ski_main' was properly closed.
+[0m16:05:19.351402 [debug] [MainThread]: Connection 'model.ski_pass_dbt.gold_customer_features' was properly closed.
+[0m16:05:19.352022 [info ] [MainThread]: 
+[0m16:05:19.352849 [info ] [MainThread]: Finished running 4 table models, 3 view models in 0 hours 0 minutes and 0.83 seconds (0.83s).
+[0m16:05:19.355382 [debug] [MainThread]: Command end result
+[0m16:05:19.381479 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\manifest.json
+[0m16:05:19.385107 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\semantic_manifest.json
+[0m16:05:19.393578 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\decla\Desktop\Ski-Pass-Renewal-Prediction\ski_pass_dbt\target\run_results.json
+[0m16:05:19.394007 [info ] [MainThread]: 
+[0m16:05:19.395014 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:05:19.395676 [info ] [MainThread]: 
+[0m16:05:19.396395 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m16:05:19.398098 [debug] [MainThread]: Command `dbt run` succeeded at 16:05:19.397940 after 2.82 seconds
+[0m16:05:19.398449 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE7AF2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE99634D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023BE98D2210>]}
+[0m16:05:19.398787 [debug] [MainThread]: Flushing usage events
+[0m16:05:20.358235 [debug] [MainThread]: An error was encountered while trying to flush usage events

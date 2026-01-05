@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: silver_resort_dimensions
+    description: "Cleaned resort dimension table"
+    columns:
+      - name: resort_key
+        tests:
+          - not_null
+          - unique
+      - name: resort
+        tests:
+          - not_null
+
+  - name: silver_guest_demographics
+    description: "Cleaned guest demographics table"
+    columns:
+      - name: customer_key
+        tests:
+          - not_null
+          - unique
+      - name: age
+        tests:
+          - not_null
+
+  - name: silver_guest_visitation
+    description: "Cleaned guest visitation table"
+    columns:
+      - name: visit_key
+        tests:
+          - not_null
+          - unique
+
+  - name: silver_guest_transactions
+    description: "Cleaned guest transactions table"
+    columns:
+      - name: purchase_key
+        tests:
+          - not_null
+          - unique
