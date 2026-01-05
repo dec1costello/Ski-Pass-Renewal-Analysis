@@ -18,7 +18,7 @@ Author: Declan Costello
 <h1 align="center">Ski Pass Renewal Prediction</h1>
 
 
-**Business Objective:** Predict ski pass renewal likelihood to optimize retention campaigns and maximize lifetime customer value.
+**Business Objective:** Predict ski pass renewal likelihood to maximize lifetime customer value.
 
 **Technical Approach:** A production-grade ML pipeline leveraging modern analytics engineering patterns. Features are defined in SQL (dbt), persisted in DuckDB, and consumed by Python ML workflows—ensuring reproducibility, version control, and auditability.
 
