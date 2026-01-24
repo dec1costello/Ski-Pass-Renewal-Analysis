@@ -20,10 +20,10 @@ Author: Declan Costello
 
 **Business Objective:** Predict ski pass renewal likelihood to maximize lifetime customer value.
 
-**Technical Approach:** A production-grade ML pipeline leveraging modern analytics engineering patterns. Features are defined in SQL (dbt), persisted in DuckDB, and consumed by Python ML workflows—ensuring reproducibility, version control, and auditability.
+**Technical Approach:** A production grade ML pipeline leveraging modern analytics engineering patterns. Features are defined in SQL (dbt), persisted in DuckDB, and consumed by Python ML workflows—ensuring reproducibility, version control, and auditability.
 
 **Key Results:**
-- ✅ **Feature Store:** SQL-defined, version-controlled feature engineering
+- ✅ **Feature Store:** SQL defined, version controlled feature engineering
 - ✅ **Reproducible ML:** Deterministic training with hyperparameter optimization
 - ✅ **Operational Analytics:** Predictions stored as tables for BI consumption
 - ✅ **Minimal Infrastructure:** Single DuckDB file serves as both warehouse and feature store
@@ -116,7 +116,7 @@ graph LR
 
 ## 🚀 Quick Start
 
-This project uses **[uv](https://docs.astral.sh/uv/)** for deterministic dependency management—critical for reproducible machine learning and analytics pipelines. The entire environment is defined in `pyproject.toml` and locked in `uv.lock`, guaranteeing identical execution across development, CI, and production.
+This project uses **[uv](https://docs.astral.sh/uv/)** for deterministic dependency management—] critical for reproducible machine learning and analytics pipelines. The entire environment is defined in `pyproject.toml` and locked in `uv.lock`, guaranteeing identical execution across development, CI, and production.
 
 #### Prerequisites
 - **Python 3.11+**
@@ -162,4 +162,5 @@ Execute the complete pipeline using the following commands:
 
 > [!TIP]
 > Use `uv run` before any Python command to guarantee execution with the locked environment. This ensures consistent Python versions and dependency trees across all machines.
+
 
