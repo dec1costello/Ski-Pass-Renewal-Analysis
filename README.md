@@ -32,7 +32,7 @@ Author: Declan Costello
 
 ## 🏗️ Architecture Diagram
 
-This ski pass renewal prediction system operates on a "single source of truth" principle with DuckDB as the central analytical engine. Customer data flows through automated cleaning and feature engineering pipelines, then machine learning models generate renewal likelihood scores that are directly stored as business-ready tables. This design eliminates data silos and infrastructure complexity, allowing marketing teams to immediately access predictive insights through standard business intelligence tools while data scientists maintain full reproducibility.
+This ski pass renewal prediction system operates on a "single source of truth" principle with DuckDB as the central analytical engine. Customer data flows through automated cleaning and feature engineering pipelines, then machine learning models generate renewal likelihood scores that are directly stored as business ready tables. This design eliminates data silos and infrastructure complexity, allowing marketing teams to immediately access predictive insights through standard business intelligence tools while data scientists maintain full reproducibility.
 
 ```mermaid
 graph LR
@@ -126,7 +126,7 @@ This project uses **[uv](https://docs.astral.sh/uv/)** for deterministic depende
 #### 1. Environment Setup
 
 ```bash
-# Install uv (one-time system setup)
+# Install uv (one time system setup)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 # or via pip
 pip install uv
@@ -162,5 +162,6 @@ Execute the complete pipeline using the following commands:
 
 > [!TIP]
 > Use `uv run` before any Python command to guarantee execution with the locked environment. This ensures consistent Python versions and dependency trees across all machines.
+
 
 
