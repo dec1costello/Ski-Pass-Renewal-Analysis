@@ -116,7 +116,7 @@ graph LR
 
 ## 🚀 Quick Start
 
-This project uses **[uv](https://docs.astral.sh/uv/)** for deterministic dependency management—] critical for reproducible machine learning and analytics pipelines. The entire environment is defined in `pyproject.toml` and locked in `uv.lock`, guaranteeing identical execution across development, CI, and production.
+This project uses **[uv](https://docs.astral.sh/uv/)** for deterministic dependency management for reproducible ML and pipelines. The entire environment is defined in `pyproject.toml` and locked in `uv.lock`, guaranteeing identical execution across development, CI, and production.
 
 #### Prerequisites
 - **Python 3.11+**
@@ -162,6 +162,7 @@ Execute the complete pipeline using the following commands:
 
 > [!TIP]
 > Use `uv run` before any Python command to guarantee execution with the locked environment. This ensures consistent Python versions and dependency trees across all machines.
+
 
 
 
