@@ -28,7 +28,7 @@ Author: Declan Costello
 - ✅ **Operational Analytics:** Predictions stored as tables for BI consumption
 - ✅ **Minimal Infrastructure:** Single DuckDB file serves as both warehouse and feature store
 
-**Architecture Choice Rationale:** DuckDB was selected over Snowflake/AWS for its embedded nature, eliminating cloud costs while maintaining SQL compliance and performance for datasets under 100GB.
+**Architecture Rationale:** DuckDB was selected over Snowflake/AWS for its embedded nature, eliminating cloud costs while maintaining SQL compliance and performance for datasets under 100GB.
 
 ## 🏗️ Architecture Diagram
 
@@ -162,6 +162,7 @@ Execute the complete pipeline using the following commands:
 
 > [!TIP]
 > Use `uv run` before any Python command to guarantee execution with the locked environment. This ensures consistent Python versions and dependency trees across all machines.
+
 
 
 
