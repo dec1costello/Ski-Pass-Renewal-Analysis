@@ -20,7 +20,7 @@ Author: Declan Costello
 
 **Business Objective:** Predict ski pass renewal likelihood to maximize lifetime customer value.
 
-**Technical Approach:** A production grade ML pipeline leveraging modern analytics engineering patterns. Features are defined in SQL (dbt), persisted in DuckDB, and consumed by Python ML workflows ensuring reproducibility, version control, and auditability.
+**Technical Approach:** A production grade ML pipeline leveraging modern analytics engineering patterns. Features are defined in SQL (dbt), persisted in DuckDB, and consumed by Python ML workflows, ensuring reproducibility, version control, and auditability.
 
 **Key Results:**
 - ✅ **Feature Store:** SQL defined, version controlled feature engineering
@@ -162,6 +162,7 @@ Execute the complete pipeline using the following commands:
 
 > [!TIP]
 > Use `uv run` before any Python command to guarantee execution with the locked environment. This ensures consistent Python versions and dependency trees across all machines.
+
 
 
 
